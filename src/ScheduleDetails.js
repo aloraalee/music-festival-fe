@@ -1,6 +1,8 @@
 import './ScheduleDetails.css';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react'
+import ShowSection from '../src/ShowSection';
+
 
 function ScheduleDetails() {
   const scheduleId = useParams().id
@@ -32,7 +34,17 @@ function ScheduleDetails() {
       <article> 
         <img src="/Logo_Primavera_Sound.webp.jpg"alt={`Schedule details for ${schedule.data.attributes.title}`}/>
         <h2>{schedule.data.attributes.title}</h2>
-        <p>{schedule.data.attributes.date}</p>  
+        <p>{schedule.data.attributes.date}</p>
+        <div className='shows-section'>
+          {schedule.included.map((show, index) => (
+            <ShowSection
+            key={show.id}
+            artist={show.attributes.artist}
+            location={show.attributes.location}
+            showTime={show.attributes.show_time}
+            />
+          ))}
+        </div>      
       </article>
     </section>
   );
