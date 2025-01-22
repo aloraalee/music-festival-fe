@@ -30,9 +30,9 @@ function ScheduleDetails() {
   }
 
   return (
-    <section className='schedule-details' >
+    <section className='show-details' >
       <article> 
-        <img src="/Logo_Primavera_Sound.webp.jpg"alt={`Schedule details for ${schedule.data.attributes.title}`}/>
+        <img className="show-img"src="/Logo_Primavera_Sound.webp"alt={`Schedule details for ${schedule.data.attributes.title}`}/>
         <h2>{schedule.data.attributes.title}</h2>
         <p>{schedule.data.attributes.date}</p>
         <div className='shows-section'>
