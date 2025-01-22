@@ -29,22 +29,42 @@ function ScheduleDetails() {
     return <h2>404 - Page or Schedule Not Found</h2>
   }
 
+  const deleteShow = (showID) => {
+    console.log('Deleting show with ID:', showID); // Add this line for debugging
+    fetch(`/api/v1/schedules/${scheduleId}/remove_show/${showID}`, {
+      method: 'DELETE',
+    })
+    .then(response => response.json())
+    .then(() => {
+      setSchedule(prevSchedule => ({
+        ...prevSchedule,
+        included: prevSchedule.included.filter(show => show.id !== showID)
+      }));
+    })
+    
+    .catch(error => console.error('Error deleting show:', error));
+  };
+
   return (
     <section className='show-details' >
       <article> 
         <img className="show-img"src="/Logo_Primavera_Sound.webp"alt={`Schedule details for ${schedule.data.attributes.title}`}/>
         <h2>{schedule.data.attributes.title}</h2>
         <p>{schedule.data.attributes.date}</p>
-        <div className='shows-section'>
-          {schedule.included.map((show, index) => (
+        <div className='show-section'>
+        {schedule.included.map((show, index) => {
+          return (
             <ShowSection
-            key={show.id}
-            artist={show.attributes.artist}
-            location={show.attributes.location}
-            showTime={show.attributes.show_time}
+              key={show.id}
+              artist={show.attributes.artist}
+              location={show.attributes.location}
+              showTime={show.attributes.show_time}
+              showId={show.id}
+              deleteShow={deleteShow}
             />
-          ))}
-        </div>      
+          );
+        })}
+      </div>      
       </article>
     </section>
   );
