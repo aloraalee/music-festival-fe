@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.search-bar {
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
