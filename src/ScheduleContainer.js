@@ -1,5 +1,4 @@
-import SchedulePoster from '../src/SchedulePoster';
-
+// import './ScheduleContainer.css';
 function SchedulesContainer({ }) {
 
   return (

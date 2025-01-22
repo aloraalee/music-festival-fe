@@ -1,4 +1,4 @@
-import './SchedulePoster.css';
+// import './SchedulePoster.css';
 
 function SchedulePoster({ }) {
 
