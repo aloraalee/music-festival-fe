@@ -1,10 +1,13 @@
-// import './SchedulePoster.css';
+import './SchedulePoster.css';
+import { Link } from 'react-router-dom';
 
-function SchedulePoster({ }) {
+function SchedulePoster({ title, date, id }) {
 
   return (
     <section className="schedule-poster">
-      Individual Schedule
+      <Link to={`/${id}`}>
+      {title}
+      </Link>
     </section>
         )}
         
