@@ -1,3 +1,8 @@
 .schedule-img {
-  max-width: 30%;
+  max-width: 25%;
+}
+
+.schedule-poster {
+  display: flex;
+  flex-direction: column;
 }
