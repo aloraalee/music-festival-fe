@@ -30,7 +30,6 @@ function ScheduleDetails() {
   }
 
   const deleteShow = (showID) => {
-    console.log('Deleting show with ID:', showID); // Add this line for debugging
     fetch(`/api/v1/schedules/${scheduleId}/remove_show/${showID}`, {
       method: 'DELETE',
     })
