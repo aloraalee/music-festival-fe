@@ -1,0 +1,208 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "schedule",
+      "attributes": {
+        "title": "Alora's Thursday Schedule",
+        "date": "2023-06-08",
+        "user_id": 1
+      },
+      "relationships": {
+        "shows": {
+          "data": [
+            {
+              "id": "1",
+              "type": "show"
+            },
+            {
+              "id": "2",
+              "type": "show"
+            },
+            {
+              "id": "3",
+              "type": "show"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "2",
+      "type": "schedule",
+      "attributes": {
+        "title": "Alora's Saturday Schedule",
+        "date": "2023-06-10",
+        "user_id": 1
+      },
+      "relationships": {
+        "shows": {
+          "data": [
+            {
+              "id": "9",
+              "type": "show"
+            },
+            {
+              "id": "10",
+              "type": "show"
+            },
+            {
+              "id": "11",
+              "type": "show"
+            },
+            {
+              "id": "12",
+              "type": "show"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "3",
+      "type": "schedule",
+      "attributes": {
+        "title": "Zach's Thursday Schedule",
+        "date": "2023-06-08",
+        "user_id": 2
+      },
+      "relationships": {
+        "shows": {
+          "data": [
+            {
+              "id": "1",
+              "type": "show"
+            },
+            {
+              "id": "2",
+              "type": "show"
+            },
+            {
+              "id": "3",
+              "type": "show"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "4",
+      "type": "schedule",
+      "attributes": {
+        "title": "Zach's Saturday Schedule",
+        "date": "2023-06-10",
+        "user_id": 2
+      },
+      "relationships": {
+        "shows": {
+          "data": [
+            {
+              "id": "9",
+              "type": "show"
+            },
+            {
+              "id": "10",
+              "type": "show"
+            },
+            {
+              "id": "11",
+              "type": "show"
+            },
+            {
+              "id": "12",
+              "type": "show"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "type": "schedule",
+      "attributes": {
+        "title": "Ellen's Indie Pop/Rock Schedule",
+        "date": "2023-06-10",
+        "user_id": 3
+      },
+      "relationships": {
+        "shows": {
+          "data": [
+            {
+              "id": "10",
+              "type": "show"
+            },
+            {
+              "id": "11",
+              "type": "show"
+            },
+            {
+              "id": "12",
+              "type": "show"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "6",
+      "type": "schedule",
+      "attributes": {
+        "title": "Brian's Must See Artist",
+        "date": "2023-06-09",
+        "user_id": 4
+      },
+      "relationships": {
+        "shows": {
+          "data": [
+            {
+              "id": "5",
+              "type": "show"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "7",
+      "type": "schedule",
+      "attributes": {
+        "title": "Brian's Hip Hop",
+        "date": "2023-06-08",
+        "user_id": 4
+      },
+      "relationships": {
+        "shows": {
+          "data": [
+            {
+              "id": "1",
+              "type": "show"
+            },
+            {
+              "id": "2",
+              "type": "show"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "8",
+      "type": "schedule",
+      "attributes": {
+        "title": "Matt's Electric Vibes",
+        "date": "2023-06-09",
+        "user_id": 5
+      },
+      "relationships": {
+        "shows": {
+          "data": [
+            {
+              "id": "6",
+              "type": "show"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
