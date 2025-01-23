@@ -1,0 +1,36 @@
+{
+  "data": {
+    "id": "1",
+    "type": "schedule",
+    "attributes": {
+      "title": "Alora's Thursday Schedule",
+      "date": "2023-06-08",
+      "user_id": 1
+    },
+    "relationships": {
+      "shows": {
+        "data": [
+          {
+            "id": "1",
+            "type": "show"
+          },
+          {
+            "id": "2",
+            "type": "show"
+          }
+        ]
+      }
+    }
+  },
+  "included": [
+    {
+      "id": "2",
+      "type": "show",
+      "attributes": {
+        "artist": "Kendrick Lamar",
+        "location": "Porto Main Stage",
+        "show_time": "2023-06-08T22:30:00.000Z"
+      }
+    }
+  ]
+}
