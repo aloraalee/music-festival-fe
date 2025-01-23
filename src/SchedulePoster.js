@@ -5,7 +5,7 @@ function SchedulePoster({ title, date, id }) {
 
   return (
     <section className="schedule-poster">
-      {title} for {date}
+      <h2>{title} for {date}</h2>
       <Link to={`/${id}`}>
       <img className="schedule-img"src="/porto.jpg" alt={`Poster of ${title}`}/>
       </Link>

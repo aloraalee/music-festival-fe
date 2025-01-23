@@ -50,7 +50,8 @@ function ScheduleDetails() {
       <article> 
         <img className="show-img"src="/Logo_Primavera_Sound.webp"alt={`Schedule details for ${schedule.data.attributes.title}`}/>
         <h2>{schedule.data.attributes.title}</h2>
-        <p>{schedule.data.attributes.date}</p>
+        <h3>{schedule.data.attributes.date}</h3>
+        <p>The following are shows for user {schedule.data.attributes.user_id}:</p>
         <div className='show-section'>
         {schedule.included.map((show, index) => {
           return (
