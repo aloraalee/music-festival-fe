@@ -1,5 +1,3 @@
-import './ShowSection.css';
-
 function ShowSection({ showId, artist, location, showTime, deleteShow }) {
 
   return (
