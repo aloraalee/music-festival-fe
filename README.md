@@ -11,10 +11,12 @@ This React application serves as the frontend for the Music Festival Organizatio
 - Responsive design for desktop, tablet, and mobile devices
 
 ## Components
-- ScheduleList: Displays a grid of schedule cards
+<img width="766" alt="Screenshot 2025-01-23 at 12 07 04 AM" src="https://github.com/user-attachments/assets/f02b128b-af8d-49f3-b408-244a26c33a71" />
+
+- ScheduleContainer: Displays a list of schedule cards
+- SchedulePoster: Formats a single schedule card
 - ScheduleDetail: Shows detailed view of a selected schedule
-- Navigation: Handles responsive navigation
-- Search/Filter: Allows users to search or filter schedules
+- ShowSection: Formats a single show card
 
 ## API Integration
 This frontend application integrates with a Rails API backend. Ensure the API is running and accessible at `http://localhost:3000/api/v1/`.
