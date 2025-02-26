@@ -1,7 +1,7 @@
 # Music Festival Schedule Service Frontend
 
 ## Description
-This React application serves as the frontend for the Music Festival Organization Service. It allows users to view and manage music festival schedules, including viewing schedule details, removing shows from schedules, and searching schedules.
+This React application serves as the frontend for the Music Festival Organization Service. It is an app for admins to view and manage music festival schedules, including viewing schedule details, removing shows from schedules, and searching schedules.
 
 ## Features
 - View a list of music festival schedules
